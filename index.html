@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>湊あくあ非公式公式サイト</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="https://yt3.ggpht.com/ytc/AKedOLTbU5ET3bgn0Iuz1jUBNjgSe9EW8kLxIhDUrtJlPw=s900-c-k-c0x00ffffff-no-rj">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+    <div class="start">
+        <p><img src="start.png" alt=""></p>
+    </div>
+    <div class="header">
+        <img src="rogo.png"  style="position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); height: 200px;">
+    </div>
+    <div class="top">
+        <video src="top.mp4" autoplay loop class="top-video"></video>
+        <img src="rogo.png" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);">
+    </div>
+    <div class="about">
+        <h1 class="fade-in fade-in-up">about</h1>
+        <hr class="blue-line">
+        <p class="fade-in fade-in-up">湊あくあはホロライブ所属のバーチャルyoutuberです。<br>
+            2018年8月8日にデビューしました。<br>
+            チャンネル登録者は141万人に達し、総再生回数も1億6000万回を突破しています。（2021/10/20日現在)<br>
+            他にも「ようこそ実力至上主義の教室へ」の広報担当に就任したり、2020年にはソロライブ「あくあ色すーぱー☆どり～む♪」を開催するなど多方面で活躍しています。
+        </p>
+    </div>
+    <div class="profie">
+    <h1 style="text-align: center; color: white;" class="fade-in fade-in-up">profile</h1>
+    <hr class="blue-line" class="fade-in fade-in-up">
+        <div class="card-purofu">
+          <button class="show-card">
+            <img src="https://芸能人の裏ニュース.com/wp-content/uploads/2021/05/WS000000-41.jpg">
+            Press here
+          </button>
+          <article class="card">
+            </section>
+            <section class="details">
+              <h2 class="name" style="color: rgb(117, 204, 255);">湊あくあ</h2>
+              <p class="description" style="color: rgb(117, 204, 255);">「皆さんどうもこんあくあ～！バーチャルアイドル ゲーマー猫耳メイドの湊あくあで～す！！」<Br>
+                マリンメイド服のバーチャルメイド。本人は頑張っているがおっちょこちょいでドジっ子。<br>
+                ファンネーム：あくあクルー<Br>
+                イラストレーター：がおう<br>
+                推しマーク：⚓<br>
+                誕生日：12月1日<br>
+                身長：148cm<br>
+                デビュー日：2018年8月8日<br>
+                夢	銀河一最強アイドル<Br>
+            </p>
+
+            </section>
+            <section class="headshot">
+              <img src="https://芸能人の裏ニュース.com/wp-content/uploads/2021/05/WS000000-41.jpg">
+            </section>
+          </article>
+        </div>
+    </div>
+    <div class="information">
+    <p><Br>
+        <Br>
+            <Br>
+                <Br>
+    </p>
+        <h1 class="fade-in fade-in-up">information</h1>
+        <hr class="blue-line">
+        <h1 class="fade-in fade-in-up">最新動画</h1>
+        <iframe width="800" height="450" src="https://www.youtube.com/embed/?list=UU1opHUrw8rvnsadT-iGp7Cg
+        " title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="fade-in fade-in-up"></iframe>
+    <h1 class="fade-in fade-in-up">music</h1>
+    <iframe src="https://open.spotify.com/embed/artist/6GHr4rGFHGRUuzuCuxJA0f?utm_source=generator" width="60%" height="380" frameBorder="0" allowfullscreen="" class="fade-in fade-in-up" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+  </div>
+<footer>
+        <p>© 2016 COVER Corp.</p>
+    </footer>
+   <script>
+        $(function() {
+	setTimeout(function(){
+		$('.start p').fadeIn(1600);
+	},500); //0.5秒後にロゴをフェードイン!
+	setTimeout(function(){
+		$('.start').fadeOut(500);
+	},2500); //2.5秒後にロゴ含め真っ白背景をフェードアウト！
+});
+
+$('.show-card').click(function(e) {
+  $('.card').addClass('show').css('display', 'block');
+  $('.show-card').addClass('hide');
+});
+
+$('.card .close').click(function(e) {
+  $('.card').addClass('hide');
+  setTimeout(function() {
+    $('.card').css('display', 'none').removeClass('show').removeClass('hide');
+  }, 1000);
+  $('.show-card').removeClass('hide');
+});
+
+jQuery(function ($) {
+  var fadeIn = $('.fade-in');
+  $(window).scroll(function () {
+    $(fadeIn).each(function () {
+      var offset = $(this).offset().top;
+      var scroll = $(window).scrollTop(); 
+      var windowHeight = $(window).height();
+      if (scroll > offset - windowHeight + 150) {
+        $(this).addClass("scroll-in");
+      }
+    });
+  });
+});
+   </script>
+</body>
+</html>
